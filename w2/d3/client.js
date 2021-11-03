@@ -10,7 +10,9 @@ const connect = function () {
 conn.on("connect" ,() => {
   console.log("connection deya")
   conn.write("Name: POO")
-    
+  conn.write("Move: up")
+  conn.write("Move: left")
+  // conn.write("Move: right")
 })
   return conn;
 };
