@@ -9,6 +9,8 @@ const connect = function () {
   conn.setEncoding("utf8");
 conn.on("connect" ,() => {
   console.log("connection deya")
+  conn.write("Name: POO")
+    
 })
   return conn;
 };
